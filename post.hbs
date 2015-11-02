@@ -3,6 +3,7 @@
 {{! The comment above "< default" means - insert everything in this file into
     the {body} of the default.hbs template, which contains our header/footer. }}
 
+{{#if @blog.logo}}<a class="blog-logo" href="{{@blog.url}}" style="background-image: url({{@blog.logo}})">{{@blog.title}}</a>{{/if}}
 <main class="content" role="main">
 
     <article class="{{post_class}}">
@@ -153,14 +154,3 @@
     </article>
 
 </main>
-
-<div class="bottom-closer">
-    <div class="background-closer-image" {{#if @blog.cover}}style="background-image: url({{@blog.cover}})"{{/if}}>
-        Image
-    </div>
-    <div class="inner">
-        <h1 class="blog-title">{{@blog.title}}</h1>
-        <h2 class="blog-description">{{@blog.description}}</h2>
-        <a href="/" class="btn">Back to Overview</a>
-    </div>
-</div>
