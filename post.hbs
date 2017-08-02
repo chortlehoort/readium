@@ -3,7 +3,7 @@
 {{! The comment above "< default" means - insert everything in this file into
     the {body} of the default.hbs template, which contains our header/footer. }}
 
-{{#if @blog.logo}}<a class="blog-logo" href="{{@blog.url}}" style="background-image: url({{@blog.logo}})">{{@blog.title}}</a>{{/if}}
+{{#if @blog.logo}}<a class="blog-logo" href="http://www.stevebrownlee.com/" style="background-image: url({{@blog.logo}})">{{@blog.title}}</a>{{/if}}
 <main class="content" role="main">
 
     <article class="{{post_class}}">
@@ -48,7 +48,7 @@
 
                     var $window = $(window),
                         $image = $('.post-image-image');
-                    $window.on('scroll', function() {
+                        $window.on('scroll', function() {
                         var top = $window.scrollTop();
 
                         if (top < 0 || top > 1500) { return; }
@@ -59,7 +59,7 @@
                     $window.trigger('scroll');
 
                     var height = $('.article-image').height();
-                        $('.post-content').css('padding-top', height + 'px');
+                    $('.post-content').css('padding-top', height + 'px');
 
                     $(function() {
                       $('a[href*=#]:not([href=#])').click(function() {

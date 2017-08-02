@@ -48,6 +48,8 @@ body {
   margin: 0;
   padding: 0;
   text-rendering: optimizeLegibility;
+  background-image: url("/content/images/paper.jpg");
+  background-size: 30%;
   -webkit-font-smoothing: antialiased;
   -moz-font-feature-settings: "liga=1, dlig=1";
   -ms-font-feature-settings: "liga", "dlig";
@@ -390,7 +392,7 @@ body {
     letter-spacing: -0.02em;
     font-weight: 700;
     font-style: normal;
-    font-size: 40px;
+    font-size: 45px;
     line-height: 1.2;
     padding-top: 24px;
     padding-bottom: 8px;
