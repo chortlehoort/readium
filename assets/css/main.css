@@ -48,8 +48,6 @@ body {
   margin: 0;
   padding: 0;
   text-rendering: optimizeLegibility;
-  background-image: url("/content/images/paper.jpg");
-  background-size: 30%;
   -webkit-font-smoothing: antialiased;
   -moz-font-feature-settings: "liga=1, dlig=1";
   -ms-font-feature-settings: "liga", "dlig";
@@ -375,7 +373,7 @@ body {
   text-overflow: ellipsis; }
 .post .post-content {
   width: 100%;
-  font-family: Linux Libertine;
+  font-family: 'Merriweather;
   color: #333; }
   .post .post-content h1, .post .post-content h2, .post .post-content h3 {
     font-family: Open Sans, MundoSans, "Helvetica Neue", Arial, Helvetica, sans-serif; }
